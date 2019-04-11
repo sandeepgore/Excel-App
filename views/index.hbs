@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Excel Keywords</title>
+</head>
+
+<body>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  {{!-- 
+    <form method="POST" action= "/upload/excel" enctype="multipart/form-data">
+    <input type="file" name="excel">
+    <input type="submit" value="submit">
+    </form> --}}
+  <div class="container">
+    <h3>Keyword Finder</h3>
+    <form method="POST" action="/upload/excel" enctype="multipart/form-data">
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>File upload</span>
+          <input type="file" name="excel">
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text">
+        </div>
+      </div>
+      <button type="submit" class=btn>submit</button>
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
