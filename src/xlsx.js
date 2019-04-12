@@ -14,7 +14,7 @@ const createDupandUniq = (workbook) => {
         const objKeys = Object.keys(jsonObj[0])
 
         if (objKeys.length > 4) {
-            return reject('File must contain 4 or less competitiors')
+            return reject('File must contain 4 or less competitors')
         }
 
         var CombArr = []
@@ -174,11 +174,11 @@ const createDupandUniq = (workbook) => {
             for (var i = 0; i < noOfColsWs1; i++) {
                 ws1['!cols'] = [...ws['!cols'], { wpx: 200 }]
             }
-
             /* write workbook */
             if (typeof console !== 'undefined') console.log(new Date())
-
+          
             wbExp = wb
+            
 
             if (typeof console !== 'undefined') console.log(new Date())
         })
